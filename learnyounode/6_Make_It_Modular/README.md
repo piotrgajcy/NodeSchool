@@ -1,5 +1,6 @@
-## MAKE IT MODULAR (Exercise 6 of 13)
+### MAKE IT MODULAR (Exercise 6 of 13)
 
+####Description:
  This problem is the same as the previous but introduces the concept of
  modules. You will need to create two files to solve this.
 
