@@ -1,0 +1,15 @@
+{
+  "name": "c",
+  "version": "1.0.0",
+  "description": "Write a program that performs an HTTP GET request to a URL provided to you\r as the first command-line argument. Collect all data from the server (not\r just the first \"data\" event) and then write two lines to the console\r (stdout).",
+  "main": "app.js",
+  "dependencies": {
+    "bl": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
