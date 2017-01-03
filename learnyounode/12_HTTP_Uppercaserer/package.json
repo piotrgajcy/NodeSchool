@@ -1,0 +1,14 @@
+{
+  "name": "http_upper",
+  "version": "1.0.0",
+  "description": "Write an HTTP server that receives only POST requests and converts\r incoming POST body characters to upper-case and returns it to the client.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "through2-map": "^3.0.0"
+  }
+}
