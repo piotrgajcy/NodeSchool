@@ -1,10 +1,11 @@
-var http = require('http'),
-  fs = require('fs'),
-  portNum = process.argv[2],
-  fileLoc = process.argv[3];
+const http = require('http');
+const fs = require('fs');
 
-var server = http.createServer(function (req, res) {
-    var stream = fs.createReadStream(fileLoc);
-    stream.pipe(res);
-  });
+const portNum = process.argv[2];
+const fileLoc = process.argv[3];
+
+const server = http.createServer((req, res) => {
+  const stream = fs.createReadStream(fileLoc);
+  stream.pipe(res);
+});
 server.listen(portNum);
