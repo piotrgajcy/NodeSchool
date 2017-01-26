@@ -1,9 +1,10 @@
-var net = require('net'),
-  moment = require('moment'),
-  portNumber = process.argv[2];
+const net = require('net');
+const moment = require('moment');
 
-var server = net.createServer(function (socket) {
-  var date = moment().format('YYYY-MM-DD HH:mm') + '\n';
+const portNumber = process.argv[2];
+
+const server = net.createServer((socket) => {
+  const date = `${moment().format('YYYY-MM-DD HH:mm')}\n`;
   console.log(date);
   socket.end(date);
 });
