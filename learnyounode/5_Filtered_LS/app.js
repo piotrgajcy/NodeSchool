@@ -1,16 +1,16 @@
-var fs = require('fs');
-var path = require('path');
-var pathFiles = process.argv[2];
-var extension = '.' + process.argv[3];
+const fs = require('fs');
+const path = require('path');
 
-fs.readdir(pathFiles, function (err, data) {
+const pathFiles = process.argv[2];
+const extension = `.${process.argv[3]}`;
+
+fs.readdir(pathFiles, (err, data) => {
   if (err) {
     throw err;
   } else {
-    var fileExtName;
-    for (var i = 0; i <data.length; i++) {
-      fileExtName = path.extname(data[i]);
-      if(fileExtName === extension) {
+    for (let i = 0; i < data.length; i += 1) {
+      const fileExtName = path.extname(data[i]);
+      if (fileExtName === extension) {
         console.log(data[i]);
       }
     }
