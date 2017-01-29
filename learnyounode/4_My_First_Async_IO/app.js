@@ -1,11 +1,12 @@
-var fs = require('fs');
-var file = process.argv[2];
+const fs = require('fs');
 
-fs.readFile(file, 'utf8', function (err, data) {
+const file = process.argv[2];
+
+fs.readFile(file, 'utf8', (err, data) => {
   if (err) {
     throw err;
   } else {
-    var result = data.split('\n').length - 1;
+    const result = data.split('\n').length - 1;
     console.log(result);
   }
 });
